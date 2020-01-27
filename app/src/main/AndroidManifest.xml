@@ -3,7 +3,7 @@
   package="com.raywenderlich.android.creaturemon">
 
   <application
-    android:name=".app.CreaturemonApplication"
+    android:name=".app.CreatureMonApplication"
     android:allowBackup="false"
     android:icon="@mipmap/ic_launcher"
     android:label="@string/app_name"

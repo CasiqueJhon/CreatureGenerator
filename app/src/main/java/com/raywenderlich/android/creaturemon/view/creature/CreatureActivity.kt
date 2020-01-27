@@ -22,6 +22,7 @@ import kotlinx.android.synthetic.main.activity_creature.*
 
 class CreatureActivity : AppCompatActivity(), AvatarAdapter.AvatarListener, CreatureContract.View {
 
+
   private val presenter = CreaturePresenter()
 
   override fun onCreate(savedInstanceState: Bundle?) {

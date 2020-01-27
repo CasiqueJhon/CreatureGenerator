@@ -2,13 +2,13 @@ package com.raywenderlich.android.creaturemon.model.room
 
 import android.os.AsyncTask
 import androidx.lifecycle.LiveData
-import com.raywenderlich.android.creaturemon.app.CreaturemonApplication
+import com.raywenderlich.android.creaturemon.app.CreatureMonApplication
 import com.raywenderlich.android.creaturemon.model.Creature
 import com.raywenderlich.android.creaturemon.model.CreatureRepository
 
 class RoomRepository : CreatureRepository {
 
-  private val creatureDao: CreatureDao = CreaturemonApplication.database.creatureDao()
+  private val creatureDao: CreatureDao = CreatureMonApplication.database.creatureDao()
 
   private val allCreatures: LiveData<List<Creature>>
   init {

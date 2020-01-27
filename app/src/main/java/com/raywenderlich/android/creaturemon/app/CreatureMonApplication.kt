@@ -2,9 +2,12 @@ package com.raywenderlich.android.creaturemon.app
 
 import android.app.Application
 import androidx.room.Room
+import com.raywenderlich.android.creaturemon.dagger.component.AppComponent
 import com.raywenderlich.android.creaturemon.model.room.CreatureDatabase
 
-class CreaturemonApplication : Application() {
+class CreatureMonApplication : Application() {
+
+  lateinit var creatureMonApplication: AppComponent
 
   companion object {
     lateinit var database: CreatureDatabase
@@ -16,4 +19,5 @@ class CreaturemonApplication : Application() {
             "creature_database")
             .build()
   }
+
 }
